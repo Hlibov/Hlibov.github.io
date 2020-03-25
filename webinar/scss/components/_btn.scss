@@ -1,0 +1,53 @@
+.btn {
+	@include animate(background-color);
+	
+	display: inline-block;
+	color: $btn-color;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-decoration: none;
+	background-color: $btn-background-2;
+	
+	&:hover {
+		background-color: darken($btn-background-2, 15%);
+	}
+}
+
+.btn-sm {
+	padding: 0px 9px 0px 7px;
+	font-size: 11px;
+	background-color: $btn-background-1;
+	border: 1px solid darken($btn-background-1, 25%);
+	border-radius: 4px;
+	line-height: 20px;
+	text-align: left;
+	
+	&:hover {
+		background-color: darken($btn-background-1, 25%);
+	}
+}
+
+.btn-lg {
+	min-width: 288px;
+	border-radius: 3px;
+	font-size: 18px;
+	line-height: 1;
+	padding: 15px 0;
+	text-align: center;
+	
+	@include media('>=tablet') {
+		min-width: 416px;
+	}
+}
+
+.btn-fluid {
+	width: 100%;
+	padding: 9px 0;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px;
+	
+	@include media('>=tablet') {
+		padding: 13px 0;
+	}
+}

@@ -1,0 +1,103 @@
+body {
+	letter-spacing: -1px;
+	word-spacing: 3px;
+}
+
+#wrapper {
+	overflow: hidden;
+	position: relative;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1040px;
+	padding: 0 16px;
+	
+	@include media('<tablet') {
+			max-width: 480px;
+		}
+}
+
+a {
+	
+	&:hover {
+		color: darken($base-link-color, 25%);
+	}
+}
+
+.logo {
+	width: 60px;
+	display: block;
+	text-align: center;
+	left: 50%;
+	
+	@include media('>=tablet') {
+		width: 90px;
+	}
+	
+	@include media('>=desktop') {
+		width: 110px;
+	}
+}
+		
+.order-1 {
+	order: 1;
+}
+
+.footer {
+	.footer-bottom {
+		text-align: center;
+		font-size: 12px;
+		
+		@include media('>=tablet') {
+			font-size: 14px;
+		}
+		
+		.info {
+			@extend %listreset;
+			
+			padding: 0 15px;
+			margin: 0 auto;
+			display: inline-flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			overflow: hidden;
+			
+			@include media('>=tablet') {
+				width: 100%;
+			}
+			
+			li {
+				position: relative;
+				padding: 0 14px;
+				margin-bottom: 5px;
+				
+				// &:after {
+				// 	@include size(2px, 100%);
+					
+				// 	content: "";
+				// 	position: absolute;
+				// 	background-color: $white;
+				// 	top: 0;
+				// 	right: -3px;
+				// }
+				
+				// &:nth-child(2n) {
+				// 	@include media('<tablet') {
+				// 		&:after {
+				// 			display:none;
+				// 		}
+				// 	}
+				// }
+			}
+		}
+		
+		a {
+			@include animate(color);
+			
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+}

@@ -1,0 +1,273 @@
+
+input{
+	color: $black;
+	font-size: 12px;
+	line-height: 1;
+	
+	&[type='text'],
+	&[type='tel'],
+	&[type='email'],
+	&[type='search'],
+	&[type='password'],
+	textarea {
+		width: 100%;
+		display:block;
+		border: 1px solid $gray-e5;
+		border-radius: 5px;
+		padding: 17px 12px;
+		height: 48px;
+		border-color: $gray-a5;
+		font-size: 14px;
+		
+		@include media('>=tablet') {
+			padding: 14px 12px;
+			height: 42px;
+		}
+		
+		@include placeholder {
+			text-transform: capitalize;
+			font-size: 14px;
+		}
+	}
+	
+	.form-register & {
+		@include media('>=tablet') {
+			padding: 14px 12px;
+			height: 42px;
+		}
+	}
+}
+
+.checkbox {
+	position:relative;
+	margin-bottom: 12px;
+
+	input[type=checkbox] {
+		display: none;
+	}
+
+	label {
+		padding-left: 25px;
+		margin: 0;
+		
+		&:after {
+			@include size(18px);
+			
+			content: '';
+			display: block;
+			border: 1px solid $gray-a5;
+			border-radius: 2px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+	
+	input[type=checkbox]:checked + label:after {
+		content: $icon-checkmark2;
+		font-family: '#{$icomoon-font-family}';
+		font-size: 16px;
+		color: $blue-01;
+		text-align: center;
+		line-height: 1;
+	}
+}
+
+.select-holder {
+	position:relative;
+	
+	&:before {
+		@include size (25px);
+		
+		content: $icon-keyboard_arrow_down;
+		background-color: $white;
+		position: absolute;
+		top: 50%;
+		right: 1px;
+		transform:translateY(-50%);
+		border-radius: 5px;
+		color: $black-2f;
+		pointer-events: none;
+		font-family:'#{$icomoon-font-family}';
+		font-size: 18px;
+		
+	}
+	
+	.form-register & {
+		
+		&:before {
+			color: #C3C4C5;
+			
+			@include media('>=tablet') {
+				right: 9px;
+			}
+		}
+	}
+}
+
+select {
+	display:block;
+	width: 100%;
+	color: #C3C4C5;
+	line-height: 1;
+	border-radius: 5px;
+	font-size: 14px;
+	border-color: $gray-a5;
+	
+	option {
+		text-transform: capitalize;
+		
+		&:first-child {
+			display: none;
+		}
+	}
+	
+	.form-feedback & {
+		padding: 9px;
+		
+		@include media('>=tablet') {
+			padding: 13px 8px;
+		}
+	}
+	
+	.form-register & {
+		padding: 15px 12px;
+		height: 48px;
+		
+		@include media('>=tablet') {
+			padding: 10px 12px;
+			height: 42px;
+		}
+		
+		option {
+			color: #C3C4C5;
+		}
+	}
+}
+
+label {
+	display: block;
+	position: relative;
+	font-size: 14px;
+	margin-bottom: 9px;
+}
+
+button {
+	border: none;
+}
+
+.form-register {
+	position: relative;
+	z-index: 2;
+	max-width: 448px;
+	padding: 33px 15px;
+	border-radius: 20px;
+	background-color: $white;
+	box-shadow: 0 8px 44px rgba($black, .1);
+	text-align: center;
+	margin: -292px auto 0;
+
+	@include media('>=tablet') {
+		margin-top: -188px;
+		padding: 48px 40px 48px;
+	}
+	
+	@include media('>=desktop') {
+		margin-top: -154px;
+	}
+	
+	h2 {
+		position: relative;
+		color: $headings-color-1;
+		line-height: 1.3;
+		margin-bottom: 14px;
+		padding: 0 20px;
+		
+		@include media('>=tablet') {
+			margin-bottom: 40px;
+		}
+		
+		&:before {
+			@include size(100%, 8px);
+			
+			content: "";
+			position: absolute;
+			top: 106%;
+			left: 0;
+			background: url(images/2.svg) no-repeat center;
+		
+			@include media('<tablet') {
+				transform: scale(0);
+			}
+		}
+	}
+	
+	.row {
+		margin-bottom: 12px;
+		display: flex;
+		
+		@include media('>=tablet') {
+			margin-bottom: 22px;
+		}
+		
+		& > .input-holder.small{
+			width: 50%;
+			
+			&:first-child {
+				
+				[type = "text"] {
+					border-radius: 5px 0 0 5px; 
+				}
+			}
+			
+			&:last-child {
+				
+				[type = "text"] {
+					border-radius: 0 5px 5px 0; 
+					border-left: 0;
+				}
+			}
+		}
+	}
+	
+	.input-holder {
+		width: 100%;
+		position: relative;
+	}
+	
+	.btn-holder {
+		padding-top: 16px;
+		margin: 0;
+	}
+	
+	.btn-fluid {
+		padding: 13px 0;
+	}
+}
+
+.form-feedback {
+	margin: 0 auto;
+	width: 288px;
+	
+	@include media('>=tablet') {
+		width: auto;
+		max-width: 478px;
+		padding: 0 31px;
+	}
+	
+	.form-box {
+		margin-bottom: 17px;
+		font-size: 14px;
+		
+		@include media('>=tablet') {
+			margin-bottom: 26px;
+		}
+	}
+	
+	.btn-holder {
+		
+		@include media('>=tablet') {
+			padding-top: 7px;
+		}
+	}
+}
