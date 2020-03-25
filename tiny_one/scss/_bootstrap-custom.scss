@@ -1,0 +1,134 @@
+// custom variables and override bootstrap variables
+
+$body-bg: #fff;
+
+$white:  #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #898989;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:  #010101;
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #fcdb00;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: ();
+$colors: map-merge((
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+), $colors);
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $black;
+
+$theme-colors: ();
+$theme-colors: map-merge((
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+), $theme-colors);
+
+$spacer: 1rem !default;
+$spacers: ();
+$spacers: map-merge((
+	0: 0,
+	1: ($spacer * .25),
+	2: ($spacer * .5),
+	3: $spacer,
+	4: ($spacer * 1.125),
+	5: ($spacer * 2.4375),
+	6: ($spacer * 4.25),
+	7: ($spacer * 5.5625),
+	8: ($spacer * 7.5),
+	9: ($spacer * 9),
+	10: ($spacer * 10.5)
+), $spacers);
+
+$base-min-width: 320px;
+
+// This is the default html and body font-size for the base rem value.
+$rem-base: 16px;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 960px
+);
+
+// Body
+
+$body-color:                $black;
+
+// Typography
+
+$font-family-sans-serif:      "PT Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-base: $font-family-sans-serif;
+
+$line-height-base:            1.25;
+
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.375;
+
+$headings-font-weight:        700;
+$lead-font-weight:            400;
+
+// Navbar
+
+$navbar-light-color:                rgba($black, 1);
+$navbar-light-hover-color:          rgba($black, .5);
+$navbar-light-active-color:         rgba($black, .5);
+
+// Forms
+
+$input-padding-y: 1rem;
+$input-padding-x: 1.4375rem;
+$input-line-height: 1.125rem;
+$input-border-width: 0;
+$input-height: 3.125rem;
+
+// Buttons
+
+$btn-padding-x: 2.1875rem;
+$btn-font-weight: $font-weight-bold;
+$btn-border-width: 0;
+$btn-transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, box-shadow .3s ease-in-out;
