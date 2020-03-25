@@ -1,0 +1,159 @@
+#footer{
+	color:$text1-color;
+	background: #5363d8;
+}
+.footer-top{
+	background: $bg1;
+	padding: 100px 0;
+
+
+	@include media('<desktop')  {
+		padding: 50px 0;
+	}
+	@include media('<tablet')  {
+		padding: 30px 0;
+	}
+
+
+	.layout{
+		display: flex;
+		justify-content: space-between;
+
+
+		@include media('<tablet')  {
+			flex-wrap:wrap;
+		}
+
+
+	}
+}
+.contact-col{
+	width:calc(50% - 70px);
+
+
+	@include media('<widescreen')  {
+		width:calc(50% - 27px);
+		padding-left:15px;
+	}
+	@include media('<desktop')  {
+		width: 50%;
+		padding:0;
+	}
+	@include media('<tablet')  {
+		width:100%;
+	}
+
+
+	h4{
+		margin:0 0 60px 0;
+
+
+		@include media('<desktop')  {
+			margin:0 0 40px 0;
+		}
+		@include media('<tablet')  {
+			text-align: center;
+			margin:0 0 5px;
+		}
+
+
+	}
+	p{
+		margin:0 0 70px 0;
+
+
+		@include media('<tablet')  {
+			margin:0 0 10px 0;
+		}
+
+
+	}
+}
+.list-icons{
+	@extend %listreset;
+	display: flex;
+	margin:0 -10px;
+
+
+	@include media('<tablet')  {
+		margin:0 0 20px 0;
+		justify-content: center;
+	}
+
+
+	li{
+		padding:0 10px;
+		font-size:21px;
+	}
+	a{
+		color:$tagline-text-color;
+		text-decoration: none;
+	}
+}
+.contact-us-holder{
+	@extend %listreset;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+
+
+	@include media('<tablet')  {
+		justify-content: center;
+	}
+
+
+	.contact-cell{
+		display: flex;
+		padding:7px 0;
+		width:calc(50% - 58px);
+
+
+		@include media('<widescreen')  {
+			padding:7px 15px;
+			width:50%; 
+		}
+		@include media('<desktop')  {
+			width:100%;
+		}
+
+
+	}
+	a{
+		color:$tagline-text-color;
+		text-decoration: none;
+	}
+	address{
+		font-style: normal;
+	}
+	.img-icon{
+		margin:0 20px 0 0;
+		font-size:21px;
+	}	
+	.text{
+		ul{
+			@extend %listreset;
+		}
+	}
+}
+.footer-bottom{
+	padding: 44px 0;
+	text-align: center;
+	font-size: 16px;
+	p{
+
+
+		@include media('<tablet')  {
+			margin-bottom: 10px;
+		}
+
+
+	}
+
+
+	@include media('<desktop')  {
+		padding: 30px 0;
+	}
+	@include media('<tablet')  {
+		padding: 20px 0;
+	}
+}
