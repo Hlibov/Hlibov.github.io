@@ -1,0 +1,38 @@
+.navbar-brand {
+	
+	@include media-breakpoint-up(lg) {
+		margin-left: rem-calc(3);
+	}
+}
+
+.navbar {
+	padding: rem-calc(20) 0;
+	
+	@include media-breakpoint-up(lg) {
+		margin-left: rem-calc(3);
+		padding: rem-calc(57 0 55);
+	}
+}
+
+.nav-link {
+	
+	@include media-breakpoint-up(lg) {
+		padding: 0 !important;
+		margin-left: rem-calc(66) !important;
+	}
+}
+
+.navbar-nav {
+	@include media-breakpoint-only(md) {
+		padding-left: rem-calc(40);
+	}
+	
+	@include media-breakpoint-down(md) {
+		border: rem-calc(1) solid $dark;
+		border-width: rem-calc(1 0 0);
+	}
+	
+	@include media-breakpoint-up(lg) {
+		margin-right: rem-calc(20);
+	}
+}

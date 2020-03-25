@@ -1,0 +1,6 @@
+.form-group {
+	@include media-breakpoint-up(md) {
+		width: rem-calc(580);
+		margin: rem-calc(0 21 0 0);
+	}
+}

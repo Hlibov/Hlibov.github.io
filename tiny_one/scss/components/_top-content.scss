@@ -1,0 +1,50 @@
+.top-content {
+	background-color: $yellow;
+	padding: rem-calc(30 0 50);
+	
+	@include media-breakpoint-up(lg) {
+		padding: rem-calc(0 0 108);
+	}
+	
+	.imgs-holder {
+		@include media-breakpoint-down(sm) {
+			margin-bottom: rem-calc(20);
+		}
+	}
+	
+	.mob-logo-holder{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -95%);
+	}
+	
+	img {
+		max-width: rem-calc(316);
+		margin: 0 auto;
+		
+		@include responsive-image;
+	}
+	
+	.icons-list {
+		@extend %listreset;
+		
+		display: flex;
+		flex-wrap: wrap;
+		
+		li {
+			font-size: rem-calc(40);
+			margin-right: rem-calc(32);
+		}
+		
+		a {
+			color: inherit;
+			text-decoration: none;
+			@include animate(color);
+			
+			&:hover {
+				color: $navbar-light-hover-color;
+			}
+		}
+	}
+}
