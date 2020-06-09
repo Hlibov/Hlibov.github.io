@@ -9,5 +9,7 @@ Interactivity: Slick slider was used for galleries.***
 ***This project is mobile friendly with mobile-first approach, for making loading on mobile device faster and save the traffic. For most of images was sliced as SVG, it gives perfect quality on all resolution. For making curve background in the  title-section I used clip-path svg. Forms fields are validated with jquery plugin.***
 4. [project tiny_one](https://hlibov.github.io/tiny_one/)
 ***This is home page of the website, it was build with mobile first approach SCSS and Bootstrap4. For navigation on mobile i included burger-menu plugin.***
+5. [project creativia](https://hlibov.github.io/creativia/)
+***This project has few css animations like hover effects on buttons and flip effect in team section, also i included few js plugins: accordion, burger-menu, slider, LavaLamp-menu, isotope-filter, svg-circles, popup.***
 
 **P.S. my other projects are waiting for their turn to download )**
