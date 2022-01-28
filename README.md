@@ -1,7 +1,7 @@
 # Hlibov.github.io
 ## My portfolio
 1. [project my_case_list](https://hlibov.github.io/case-list/)
-***This project has few css animations like hover effects on buttons and flip effect in team section, also i included few js plugins: accordion, burger-menu, slider, LavaLamp-menu, isotope-filter, svg-circles, popup.***
+***This little project, the list of cases, is created with reaction technology. Component styling is based on the BEM methodology but in this case it is not important because the styling works modularly.***
 2. [project creativia](https://hlibov.github.io/creativia/)
 ***This project has few css animations like hover effects on buttons and flip effect in team section, also i included few js plugins: accordion, burger-menu, slider, LavaLamp-menu, isotope-filter, svg-circles, popup.***
 3. [project tiny_one](https://hlibov.github.io/tiny_one/)
